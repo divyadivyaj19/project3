@@ -1,0 +1,35 @@
+<html>
+<body>
+<form action="{% url 'det' %}" method="POST">
+    {% csrf_token %}
+    <table align="center" border="2">
+        <tr>
+            <th>
+                <input type="number" name="idno" placeholder="IDNO" required>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <input type="char" name="name" placeholder="NAME" required>
+            </th>
+        </tr>
+
+        </tr> <tr>
+            <th>
+                <input type="decimal" name="salary" placeholder="SALARY" required>
+            </th>
+        <tr>
+         <tr>
+            <th>
+                <input type="date" name="doj" placeholder="DOJ" required>
+            </th>
+    </tr>
+        <tr>
+        <th>
+            <button type="submit" >SAVE</button>
+            </th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
